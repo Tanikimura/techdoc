@@ -1,0 +1,33 @@
+html,body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+#navbar{
+  display: flex;
+  flex-direction: column;
+  flex:0 0 auto;
+  height: 100%;
+  border-right: 1px solid #000;
+  position: fixed;
+  justify-content: space-around;
+  padding: 10px;
+}
+#navbar a{
+  text-decoration: none;
+}
+
+.container{
+  display: grid;
+  grid-template-columns:250px 1fr;
+  grid-template-rows: auto ;
+  justify-items:center;
+}
+#titre{
+  grid-column: 2;
+  grid-row: 1;
+}
+section{
+  grid-column: 2;
+  justify-self:start;
+}
